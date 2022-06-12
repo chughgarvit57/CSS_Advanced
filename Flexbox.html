@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        #parent_Container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .header{
+            flex-basis: 100%;
+            background-color: #ccc;
+            border-bottom: 2px solid black;
+            padding: 20px;
+        }
+        .navigation{
+            flex-basis: 20%;
+            background-color: antiquewhite;
+            flex-grow: 1;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 10px; */
+        }
+        .content{
+            flex-basis: 80%;
+            background-color: blanchedalmond;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent_Container">
+        <div class="header">This is a header</div>
+        <div class="navigation">Navigation</div> 
+        <div class="content">
+            <h1>Flexbox in CSS</h1>
+            <p>The flexbox or flexible box model in CSS is a one-dimensional layout model that has flexible and efficient layouts with distributed spaces among items to control their alignment structure ie., it is a layout model that provides an easy and clean way to arrange items within a container. Flexbox can be useful for creating small-scales layouts & is responsive and mobile-friendly.</p>
+            <hr><hr>
+            <h2>Welcome to Flexbox Layout</h2>
+            <p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size. </p>
+        </div>
+    </div>
+</body>
+</html>
