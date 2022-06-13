@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital@1&family=Roboto+Mono:ital,wght@1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.navigation{
+    background-color: #ccc;
+    display: flex;
+    padding: 1.5em;
+    border-bottom: 2px solid #000;
+}
+.navigation img{
+    float: right;
+}
+.navigation ul{
+    overflow: hidden;
+}
+.navigation li{
+    float: right;
+    list-style: none;
+    margin: 20px 30px;
+    padding-left: 10rem;
+}
+
+.navigation li a{
+    text-decoration: none;
+    padding: 15px;
+    COLOR: #000;
+    transition: background-color 1s;
+}
+.navigation li a:hover{
+    background-color: lightblue;
+    color: black;
+}
+
+.hero-img{
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%,
+                                    rgba(0,0,0,0.8) 100%) , url("https://rocketman.learnwagtail.com/media/images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-786x552.jpg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.hero-img #caption_title{
+    padding-left: 2em;
+    position: absolute;
+    color: #fff;
+    top: 300px;
+    font-size: 55px;
+    text-transform: capitalize;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero-img #caption_title2{
+    padding-left: 3.5em;
+    position: absolute;
+    color: #fff;
+    top: 450px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hero-img .button button{
+    padding: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: absolute;
+    top: 34rem;
+    left: 7em;
+    transition: background-color 1s,
+                letter-spacing 0.2s;
+}
+
+.hero-img .button button:hover{
+    background-color: pink;
+    letter-spacing: 1px;
+}
